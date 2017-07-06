@@ -1,0 +1,28 @@
+{
+  "name": "bq-content-negotiator",
+  "version": "0.0.0",
+  "description": "HTTP content negotiation library.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbenner-radham/bq-content-negotiator.git"
+  },
+  "keywords": [
+    "content",
+    "negotiation",
+    "http"
+  ],
+  "author": "James Benner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jbenner-radham/bq-content-negotiator/issues"
+  },
+  "homepage": "https://github.com/jbenner-radham/bq-content-negotiator#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
