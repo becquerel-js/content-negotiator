@@ -42,4 +42,8 @@ describe('content-negotiator', function () {
 
         expect(actual).toEqual(expected);
     });
+
+    it('rejects an invalid media range value', function () {
+        expect(contentNegotiator('*, text/html')).toEqual(['text/html']);
+    });
 });
