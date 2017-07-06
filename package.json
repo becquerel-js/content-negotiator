@@ -4,7 +4,7 @@
   "description": "HTTP content negotiation library.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/jbenner-radham/bq-content-negotiator#readme",
   "devDependencies": {
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2"
+    "jasmine": "^2.6.0"
   }
 }
