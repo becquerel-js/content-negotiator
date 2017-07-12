@@ -87,14 +87,14 @@ describe('content-negotiator', function () {
             const acceptHeader = 'text/*, text/plain, text/plain;format=flowed, */*';
             const negotiator = new ContentNegotiator(acceptHeader);
 
-            expect(negotiator.prefer('text/plain;format=flowed')).toBe(true); /** @todo Research stringified parameters! */
+            expect(negotiator.prefer('text/plain;format=flowed')).toBe(true);
         });
 
         it('correctly weights example four from rfc7231', function () {
             const acceptHeader = 'text/*;q=0.3, text/html;q=0.7, text/html;level=1, text/html;level=2;q=0.4, */*;q=0.5';
             const negotiator = new ContentNegotiator(acceptHeader);
 
-            expect(negotiator.prefer('text/html;level=1')).toBe(true); /** @todo Research stringified parameters! */
+            expect(negotiator.prefer('text/html;level=1')).toBe(true);
         });
 
         it('returns a boolean', function () {
