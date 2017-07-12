@@ -1,14 +1,17 @@
 {
-  "name": "bq-content-negotiator",
+  "name": "@becquerel/content-negotiator",
   "version": "0.0.0",
   "description": "HTTP content negotiation library.",
+  "engines": {
+    "node": ">=7.10"
+  },
   "main": "./lib/index.js",
   "scripts": {
     "test": "jasmine"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbenner-radham/bq-content-negotiator.git"
+    "url": "git+https://github.com/becquerel-js/content-negotiator.git"
   },
   "keywords": [
     "content",
@@ -18,9 +21,9 @@
   "author": "James Benner",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jbenner-radham/bq-content-negotiator/issues"
+    "url": "https://github.com/becquerel-js/content-negotiator/issues"
   },
-  "homepage": "https://github.com/jbenner-radham/bq-content-negotiator#readme",
+  "homepage": "https://github.com/becquerel-js/content-negotiator#readme",
   "devDependencies": {
     "jasmine": "^2.6.0"
   }
