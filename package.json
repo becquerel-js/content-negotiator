@@ -1,6 +1,6 @@
 {
   "name": "@becquerel/content-negotiator",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "HTTP content negotiation library.",
   "engines": {
     "node": ">=7.10"
