@@ -82,7 +82,7 @@ The MIT License (Expat). See the [license file](LICENSE) for details.
 [LICENSE BADGE]: https://img.shields.io/badge/license-MIT%20License-blue.svg?style=flat-square
 [LICENSE PAGE]: https://github.com/becquerel-js/content-negotiator/blob/master/LICENSE
 [NODE PAGE]: https://nodejs.org/
-[NODE VERSION BADGE]: https://img.shields.io/badge/node-%3E%3D7.10-%23010101.svg
+[NODE VERSION BADGE]: https://img.shields.io/badge/node-%3E%3D7.10-%23010101.svg?style=flat-square
 [NPM PAGE]: https://www.npmjs.com/package/@becquerel/content-negotiator
 [NPM VERSION BADGE]: https://img.shields.io/npm/v/@becquerel/content-negotiator.svg?style=flat-square
 [RFC7231 SEC 5.3]: https://tools.ietf.org/html/rfc7231#section-5.3
