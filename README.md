@@ -13,6 +13,38 @@ Install
 $ npm install --save @becquerel/content-negotiator  # Or alternately: `yarn add @becquerel/content-negotiator`
 ```
 
+Usage
+-----
+```js
+const ContentNegotiator = require('@becquerel/content-negotiator');
+
+let acceptHeader = 'text/plain; q=0.5, text/html, text/x-dvi; q=0.8, text/x-c';
+let negotiator = new ContentNegotiator(acceptHeader);
+
+/**
+ * Use the `.prefer()` method to check if a media type is the prefered type of
+ * the requester. You can also use "shorthand types" for the following
+ * predefined types:
+ *
+ *     {
+ *         html: 'text/html',
+ *         jcard: 'application/vcard+json',
+ *         json: 'application/json',
+ *         jsonld: 'application/ld+json',
+ *         vcard: 'text/vcard'
+ *     };
+ */
+negotiator.prefer('text/html');  // > true
+negotiator.prefer('html');       // > true
+negotiator.prefer('text/plain'); // > false
+
+/**
+ * The `.mediaRanges` property contains a quality sorted array of the desired
+ * media types.
+ */
+negotiator.mediaRanges; // > ['text/html', 'text/x-c', 'text/x-dvi', 'text/plain']
+```
+
 Testing
 -------
 ```sh
