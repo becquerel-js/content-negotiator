@@ -34,9 +34,9 @@ let negotiator = new ContentNegotiator(acceptHeader);
  *         vcard: 'text/vcard'
  *     };
  */
-negotiator.prefer('text/html');  // > true
-negotiator.prefer('html');       // > true
-negotiator.prefer('text/plain'); // > false
+negotiator.prefers('text/html');  // > true
+negotiator.prefers('html');       // > true
+negotiator.prefers('text/plain'); // > false
 
 /**
  * The `.mediaRanges` property contains a quality sorted array of the desired
@@ -50,6 +50,10 @@ Testing
 ```sh
 $ npm test  # Or alternately: `yarn test`
 ```
+
+Reference
+---------
+- [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content &sect; 5.3: Content Negotiation](https://tools.ietf.org/html/rfc7231#section-5.3)
 
 License
 -------
