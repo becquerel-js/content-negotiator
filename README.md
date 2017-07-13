@@ -39,6 +39,18 @@ negotiator.prefers('html');       // > true
 negotiator.prefers('text/plain'); // > false
 
 /**
+ * Alternately you can read the `.preferred` property to obtain the requester's
+ * most desired media type. It returns an instance of the `MediaType` class.
+ */
+negotiator.preferred; // > MediaType { type: 'text', subtype: 'html', parameters: { q: 1 }, specificity: 2 }
+
+/**
+ * Also, if you would prefer the textual representation of the preferred media
+ * type you can simpy call the `MediaType.prototype.toString()` method.
+ */
+negotiator.preferred; // > 'text/html'
+
+/**
  * The `.mediaRange` property contains a quality sorted array of the desired
  * media types.
  */

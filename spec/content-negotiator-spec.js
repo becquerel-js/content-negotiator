@@ -1,6 +1,7 @@
 'use strict';
 
 const ContentNegotiator = require('../');
+const MediaType = require('../lib/MediaType');
 
 describe('content-negotiator', function () {
     it('is a function', function () {
@@ -99,6 +100,40 @@ describe('content-negotiator', function () {
 
         it('returns a boolean', function () {
             expect(new ContentNegotiator().prefers()).toEqual(jasmine.any(Boolean));
+        });
+    });
+
+    describe('.preferred', function () {
+        it('is an instance of `MediaType`', function () {
+            expect(new ContentNegotiator().preferred).toEqual(jasmine.any(MediaType));
+        });
+
+        it('correctly identifies the prefered type of example one from rfc7231', function () {
+            const acceptHeader = 'audio/*; q=0.2, audio/basic';
+            const negotiator = new ContentNegotiator(acceptHeader);
+
+            expect(negotiator.preferred).toEqual(new MediaType('audio/basic'));
+        });
+
+        it('correctly identifies the prefered type of example two from rfc7231', function () {
+            const acceptHeader = 'text/plain; q=0.5, text/html, text/x-dvi; q=0.8, text/x-c';
+            const negotiator = new ContentNegotiator(acceptHeader);
+
+            expect(negotiator.preferred).toEqual(new MediaType('text/html'));
+        });
+
+        it('correctly identifies the prefered type of example three from rfc7231', function () {
+            const acceptHeader = 'text/*, text/plain, text/plain;format=flowed, */*';
+            const negotiator = new ContentNegotiator(acceptHeader);
+
+            expect(negotiator.preferred).toEqual(new MediaType('text/plain;format=flowed'));
+        });
+
+        it('correctly identifies the prefered type of example four from rfc7231', function () {
+            const acceptHeader = 'text/*;q=0.3, text/html;q=0.7, text/html;level=1, text/html;level=2;q=0.4, */*;q=0.5';
+            const negotiator = new ContentNegotiator(acceptHeader);
+
+            expect(negotiator.preferred).toEqual(new MediaType('text/html;level=1'));
         });
     });
 });
