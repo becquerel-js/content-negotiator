@@ -39,10 +39,10 @@ negotiator.prefers('html');       // > true
 negotiator.prefers('text/plain'); // > false
 
 /**
- * The `.mediaRanges` property contains a quality sorted array of the desired
+ * The `.mediaRange` property contains a quality sorted array of the desired
  * media types.
  */
-negotiator.mediaRanges; // > ['text/html', 'text/x-c', 'text/x-dvi', 'text/plain']
+negotiator.mediaRange; // > ['text/html', 'text/x-c', 'text/x-dvi', 'text/plain']
 ```
 
 Testing
