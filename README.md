@@ -53,7 +53,7 @@ $ npm test  # Or alternately: `yarn test`
 
 Reference
 ---------
-- [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content &sect; 5.3: Content Negotiation](https://tools.ietf.org/html/rfc7231#section-5.3)
+- [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content &sect; 5.3: Content Negotiation][RFC7231 SEC 5.3]
 
 License
 -------
@@ -67,3 +67,4 @@ The MIT License (Expat). See the [license file](LICENSE) for details.
 [NODE VERSION BADGE]: https://img.shields.io/badge/node-%3E%3D7.10-%23010101.svg
 [NPM PAGE]: https://www.npmjs.com/package/@becquerel/content-negotiator
 [NPM VERSION BADGE]: https://img.shields.io/npm/v/@becquerel/content-negotiator.svg?style=flat-square
+[RFC7231 SEC 5.3]: https://tools.ietf.org/html/rfc7231#section-5.3
