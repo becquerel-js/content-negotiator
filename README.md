@@ -27,10 +27,16 @@ let negotiator = new ContentNegotiator(acceptHeader);
  * predefined types:
  *
  *     {
+ *         atom: 'atom+xml',
+ *         css: 'text/css',
+ *         csv: 'text/csv',
  *         html: 'text/html',
+ *         javascript: 'application/javascript',
  *         jcard: 'application/vcard+json',
  *         json: 'application/json',
  *         jsonld: 'application/ld+json',
+ *         markdown: 'text/markdown',
+ *         text: 'text/plain',
  *         vcard: 'text/vcard'
  *     };
  */
