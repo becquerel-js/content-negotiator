@@ -22,7 +22,7 @@ let acceptHeader = 'text/plain; q=0.5, text/html, text/x-dvi; q=0.8, text/x-c';
 let negotiator = new ContentNegotiator(acceptHeader);
 
 /**
- * Use the `.prefer()` method to check if a media type is the prefered type of
+ * Use the `.prefer()` method to check if a media type is the preferred type of
  * the requester. You can also use "shorthand types" for the following
  * predefined types:
  *
@@ -52,7 +52,7 @@ negotiator.preferred; // > MediaType { type: 'text', subtype: 'html', parameters
 
 /**
  * Also, if you would prefer the textual representation of the preferred media
- * type you can simpy call the `MediaType.prototype.toString()` method.
+ * type you can simply call the `MediaType.prototype.toString()` method.
  */
 negotiator.preferred; // > 'text/html'
 
