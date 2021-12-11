@@ -3,7 +3,7 @@
   "version": "0.1.0-alpha.3",
   "description": "HTTP content negotiation library.",
   "engines": {
-    "node": ">=7.10"
+    "node": ">=14"
   },
   "main": "./lib/index.js",
   "scripts": {
