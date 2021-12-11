@@ -54,7 +54,7 @@ negotiator.preferred; // > MediaType { type: 'text', subtype: 'html', parameters
  * Also, if you would prefer the textual representation of the preferred media
  * type you can simply call the `MediaType.prototype.toString()` method.
  */
-negotiator.preferred; // > 'text/html'
+negotiator.preferred.toString(); // > 'text/html'
 
 /**
  * The `.mediaRange` property contains a quality sorted array of the desired
